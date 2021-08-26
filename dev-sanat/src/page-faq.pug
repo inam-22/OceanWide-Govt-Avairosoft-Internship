@@ -1,0 +1,87 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      // faq head
+      .bg-black-pearl
+        .container
+          .py-lg-7.py-md-6.py-5
+            .row
+              .col-lg-12
+                .text-center
+                  h4.mb-2.text-white.text-dim-gray FAQs
+                  h1.text-white.mb-0 Let's Crack Those Questions 
+
+      // accordians
+      .pt-lg-9.pt-md-7.pt-6.pb-lg-9.pb-md-7.pb-6
+        .container
+          .row
+            .col-lg-8.offset-lg-2
+              #accordionExample.accordion
+                .card.border-0
+                  #headingOne.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                      | Q: What is the scope of your mining operations?
+
+                  #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-4
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                .card.border-0.mt-5
+                  #headingTwo.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                      | Q: How do you make steel and what is it used for?
+                  #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-3
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                .card.border-0.mt-5
+                  #headingThree.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                      | Q: How much steel do you produce each year?
+                  #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-3
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                .card.border-0.mt-5
+                  #headingfour.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapsefour' aria-expanded='false' aria-controls='collapsefour')
+                      | Q: What is your focus in terms of research and development?
+                  #collapsefour.collapse(aria-labelledby='headingfour' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-3
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+                .card.border-0.mt-5
+                  #headingfive.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapsefive' aria-expanded='false' aria-controls='collapsefive')
+                      | Q: What is approach to managing sustainability?
+                  #collapsefive.collapse(aria-labelledby='headingfive' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-3
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+
+                .card.border-0.mt-5
+                  #headingsix.card-header.bg-white-smoke
+                    a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapsesix' aria-expanded='false' aria-controls='collapsesix')
+                      | Q: What is the company’s current dividend policy?
+                  #collapsesix.collapse(aria-labelledby='headingsix' data-parent='#accordionExample')
+                    .card-body
+                      div.py-lg-3.px-lg-3
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+
+      .container.mb-lg-9.mb-md-7.mb-6
+        .row
+          .col-lg-8.offset-2.text-center
+          .col-sm-8.offset-sm-2.text-center
+            .mb-4.mt-2.mb-3  
+              h2 Still no luck? We can help!
+            .pt-lg-3
+              a.btn.btn-black-pearl(href='page-contact.html') Submit A Request

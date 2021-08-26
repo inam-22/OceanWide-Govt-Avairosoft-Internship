@@ -1,0 +1,324 @@
+@import "node_modules/bootstrap/scss/functions";
+
+// Websites languages direction
+$language-direction: ltr; // set value 'rtl' for right to left languages
+$language-opposite-direction: rtl; // set value 'ltr' for right to left languages
+$language-start-direction: left; // set value 'right' for right to left languages
+$language-end-direction: right; // set value 'left' for right to left languages
+$language-transform-direction: 1; // set value '-1' for right to left languages
+
+//Alert color
+$dark: #111;
+$blue: #341fff;
+$light-blue: #1da1f2;
+$dark-blue: #0000FF;
+$prime: #0000FF;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primery:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+//using color
+$solitaire: #FEF6E9;
+$black: #000000;
+$grayphite: #EDEDED;
+$gray-500:#999999;
+
+// Template colors scheme
+$cornflower-blue: #6246F9;
+$solitaire:#FEF6E9;
+$white-smoke:#F5F6F8;
+$silver-chalice:#a7a7a7;
+$mid-gray:#555865;
+$aluminium:#818a91;
+
+// sanat template color scheme
+$black-pearl:#1C1D1E;
+$dark-gray:#A8A8A8;
+$school-yellow:#FFDA00;
+$white-smoke:#F4F4F4;
+$dim-gray:#747474;
+$silver:#BEBEBE;
+
+$primary: $black-pearl;
+$solitaire: #FEF6E9;
+$white: #ffffff;
+
+//Theme Colors
+$theme-colors: (
+  "primery":$primery,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "solitaire": $solitaire,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+  "primary":$primary,
+  "black-pearl":$black-pearl,
+  "dark-gray":$dark-gray,
+  "school-yellow":$school-yellow,
+  "white":$white,
+  "white-smoke":$white-smoke,
+  "dim-gray":$dim-gray,
+  "silver":$silver,
+  "aluminium":$aluminium
+  );
+$accent-background-color: $white;
+//merge
+$colors: ();
+$colors: map-merge((
+  "primary":$primary,
+  "gray-500":$gray-500,
+  "grayphite": $grayphite,
+  "black": $black,
+  "solitaire": $solitaire,
+  "black-pearl":$black-pearl,
+  "dark-gray":$dark-gray,
+  "school-yellow":$school-yellow,
+  "white-smoke":$white-smoke,
+  "dim-gray":$dim-gray,
+  "aluminium":$aluminium
+    ),
+    
+  $colors);
+  
+
+// Set
+// The
+// Customize
+// Options
+
+$enable-responsive-font-sizes: true;
+$enable-negative-margins:     true;
+// Spacing
+$spacer: 1rem;
+$spacers: (0: 0,
+  1: ($spacer * 0.25,
+  ),
+  //4px
+  2: ($spacer * 0.5,
+  ),
+  //8px
+  3: ($spacer * 1,
+  ),
+  //16px
+  4: ($spacer * 1.5,
+  ),
+  //24px
+  5: ($spacer * 3,
+  ),
+  //48px
+  6: ($spacer * 4,
+  ),
+  //64px
+  7: ($spacer * 5,
+  ),
+  //80px
+  8: ($spacer * 6.25,
+  ),
+  //100px
+  9: ($spacer * 7.5,
+  ),
+  //120px
+  10: ($spacer * 9.375,
+  ) //150px,
+);
+
+// This
+// stylelint
+// Body
+
+$body-color: $dim-gray;
+// Settings
+
+// Links
+$link-color: $black;
+$link-decoration: none;
+
+// Paragraphs
+//
+// Style
+// Grid containers
+
+$small-screen: 540px;
+$medium-screen: 720px;
+$large-screen: 960px;
+$extra-large-screen: 1320px;
+
+$container-max-widths: (sm: $small-screen,
+  md: $medium-screen,
+  lg: $large-screen,
+  xl: $extra-large-screen,
+);
+
+// adapting
+// Grid
+//
+// Define
+// Grid
+//
+// Set
+// Components
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace;
+$font-family-base: 'Roboto';
+$font-weight-normal:400;
+$line-height-base:   1.7;
+
+$headings-font-family: 'Mulish';
+$headings-font-weight: 800;
+$headings-color:     $black-pearl;
+$headings-line-height: 1.4;
+
+
+// Assumes
+// Tables
+//
+// Customizes
+// Buttons
+//
+// Shared
+// Buttons + Forms
+
+$input-btn-font-family: $headings-font-family;
+$btn-font-weight: $headings-font-weight;
+
+// Forms
+$input-border-color: $white-smoke;
+$input-padding-y: 0.94rem;
+$input-box-shadow: 0;
+$input-bg: transparent;
+$input-color: $black-pearl;
+$input-border-radius: 0;
+$input-btn-padding-y:0.85rem;
+$input-btn-padding-x: 2.2rem;
+$input-padding-x: 1rem;
+$btn-border-radius: 10px;
+$btn-active-box-shadow: 0;
+$btn-border-radius: 4rem;
+$btn-font-size: 18px;
+$btn-font-weight: 800;
+$input-focus-border-color: $dim-gray;
+$input-focus-box-shadow: 0;
+$input-height: 6px;
+$input-btn-focus-width: 0rem;
+
+// Extra
+// In
+
+// Used
+// For
+// Form
+// stylelint
+// Z
+// Warning
+// of
+// Navs
+$nav-tabs-link-active-bg: none;
+$nav-tabs-link-active-color: $black-pearl;
+$nav-link-color: $dim-gray;
+$nav-tabs-link-active-border-color: $black-pearl;
+$nav-link-font-weight:  800;
+$nav-link-padding-x: 0rem;
+$nav-link-padding-y: 1.2rem;
+$btn-link-color:  $dim-gray;
+$btn-link-hover-color:  $black-pearl;
+// Navbar
+$navbar-padding-y: 0;
+$navbar-toggler-border-radius: 2;
+// Compute
+// Dropdowns
+$dropdown-font-size: 14;
+$dropdown-link-hover-bg: $dark-gray;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-active-color:  $white;
+$dropdown-link-active-bg:  none;
+$dropdown-box-shadow: none;
+$dropdown-item-padding-x: 2rem;
+$dropdown-item-padding-y: .55rem;
+$dropdown-bg: $black;
+$dropdown-border-width:0;
+$dropdown-border-radius:0;
+// Pagination
+
+$pagination-padding-x: 0.93rem;
+
+
+// Jumbotron
+// Cards
+// Tooltips
+// Form
+// Popovers
+// Toasts
+// Badges
+// Use
+// customizing
+// Modals
+// Padding
+// Keep
+// Alerts
+// Define
+$border-width: 3px;
+// Progress
+// List
+// Image
+// Figures
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+
+$breadcrumb-divider: quote(">");
+
+// Carousel
+// Define
+// Spinners
+// Close
+// Code
+// Utilities
+//Printing
+
+$caret-width: 0.21em;
+
+@import "node_modules/bootstrap/scss/variables";

@@ -1,0 +1,33 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Slider
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      // Slider
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-9.mt-5
+            h5.mb-4 Arrows
+            .slider-call.popup-gallery.mb-5(data-flickity='{ "contain": true, "prevNextButtons": true, "pageDots": false }')
+                img(src='assets/images/portfolio/p3.jpg', alt='portfolio')
+                img(src='assets/images/portfolio/p1.jpg', alt='portfolio')
+                img(src='assets/images/portfolio/p2.jpg', alt='portfolio')
+
+            h5.mb-4 Pagination
+            .slider-call.popup-gallery(data-flickity='{ "contain": true, "prevNextButtons": false }')
+                img(src='assets/images/blog/b2.jpg', alt='Blog')
+                img(src='assets/images/blog/b7.jpg', alt='Blog')
+                img(src='assets/images/blog/b8.jpg', alt='Blog')

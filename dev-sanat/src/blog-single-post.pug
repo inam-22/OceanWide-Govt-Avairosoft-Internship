@@ -1,0 +1,40 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //featured image
+      .container-fluid.px-0.mb-5.featured-image-blog
+
+      .container.pt-lg-5
+        .row.justify-content-lg-center
+          .col-lg-8
+            header.entry-header
+              +entryMetaTop('Amjad Ali', 'Steels', 'April 13, 2020', '', false)
+              h1.mb-5.entry-title.font-weight-bold New tunnel stretching all the way from Long Island to  Plane Land 
+            p.lead-1.mb-4 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+            div.pt-2
+              p Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+            
+      .container.my-5
+        img(src="assets/images/blog/single-post.jpg" alt="single-post")
+
+      .container
+        .row.justify-content-lg-center
+          .col-lg-8.pr-lg-10
+            h4.mb-4 We supply the steels for onshore and offshore platforms
+            p Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sadipscing  accusam et justo duo dolores rebum.
+        .row.justify-content-lg-center.mt-5
+          .col-lg-8.pr-lg-10 
+            i.fas.fa-tags.text-dim-gray
+            span.ml-2
+              a.h6.text-dim-gray(href="#") Energy, 
+            span
+              a.h6.text-dim-gray(href="") New
+        .row.justify-content-lg-center.mt-5
+          .col-lg-8
+            include includes/comments-area
+      

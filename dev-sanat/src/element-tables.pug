@@ -1,0 +1,187 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Tables
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+
+            table.table.mb-5
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+            table.table.mb-5.bg-black-pearl
+              thead
+                tr.text-white
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr.text-white
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr.text-white
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr.text-white
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+
+
+            h4.mt-5.mb-4 Striped rows
+            table.table.mb-5.table-striped
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+            table.table.mb-5.table-striped.bg-silver
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td Larry
+                  td the Bird
+                  td @twitter
+
+            h4.mt-5.mb-4 Bordered table
+            table.table.mb-5.table-bordered
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+            table.table.mb-5.table-bordered.bg-school-yellow
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+            h4.mt-5.mb-4 Borderless table
+            table.table.mb-5.table-borderless
+              thead
+                tr
+                  th(scope='col') #
+                  th(scope='col') First
+                  th(scope='col') Last
+                  th(scope='col') Handle
+              tbody
+                tr
+                  th(scope='row') 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  th(scope='row') 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  th(scope='row') 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+

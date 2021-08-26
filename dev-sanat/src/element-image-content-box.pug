@@ -1,0 +1,43 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Image Content Box
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.gx-5.mt-lg-5.mt-md-4.mt-3
+              .col-lg-6
+                img(src="assets/images/blog/b1.jpg" alt="blog").mb-4
+                h3.h4.mb-3 Concept Design
+                p Aptent taciti sociosqu ad litora torquent per on ubia nos inceptos himenaeos. Pellentesqu eget scelerisque turpis. consequat enim.
+              .col-lg-6.mt-lg-0.mt-md-5.mt-4
+                img(src="assets/images/blog/b3.jpg" alt="blog").mb-4
+                h3.h4.mb-3 Interior Architecture
+                p Aptent taciti sociosqu ad litora torquent per on ubia nos inceptos himenaeos. Pellentesqu eget scelerisque turpis. consequat enim.
+
+            hr.mt-6.mb-7
+
+            .row
+              .col-md-6.mb-5
+                img(src="assets/images/portfolio/p2.jpg", alt="portfolio").mb-4
+                h3.h4.mb-3 Made With Love
+                p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+              .col-md-6.mb-5
+                img(src="assets/images/portfolio/p4.jpg", alt="portfolio").mb-4
+                h3.h4.mb-3 Easy to Customize
+                p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+            

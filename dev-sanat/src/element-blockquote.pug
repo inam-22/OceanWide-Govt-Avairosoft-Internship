@@ -1,0 +1,32 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Blockquote
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+    // blockquote
+    .container.mt-3
+      .row.large-gutters
+        .col-lg-3.mb-7
+          //- Elements nav
+          include includes/elements-nav
+        .col-lg-9.mb-7
+          div.pr-lg-9.pr-md-7.pr-5
+            blockquote
+              .border-left.pl-4
+                p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat.
+                cite.font-weight-bold.text-silver-chalice  John Doe
+                
+            .border.border-left-0.border-right-0.mt-lg-6.mt-md-4.mt-4
+              .py-lg-5.py-md-4.py-4
+                p.lead.text-center I am not interested in the past, except as the road to the future. Over the years I have learned that what is important in a dress is the woman who is wearing it. It’s sometimes said that I’m rebellious and I do things to push people’s buttons, but I just like the challenge.
+                cite.font-weight-bold.text-silver-chalice.text-center.d-block  John Doe

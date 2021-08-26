@@ -1,0 +1,51 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Accordians
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            #accordionExample.accordion
+              .card.border-0
+                #headingOne.card-header.bg-white-smoke
+                  a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block(href='#' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | Q: What is the scope of your mining operations?
+
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .card-body
+                    div.py-lg-3.px-lg-4
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+              .card.border-0.mt-4
+                #headingTwo.card-header.bg-white-smoke
+                  a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Q: How do you make steel and what is it used for?
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .card-body
+                    div.py-lg-3.px-lg-3
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.
+              .card.border-0.mt-4
+                #headingThree.card-header.bg-white-smoke
+                  a.heading-size.mb-0.py-lg-4.px-lg-4.py-md-4.px-md-3.py-2.px-2.d-block.collapsed(href='#' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    | Q: How much steel do you produce each year?
+                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                  .card-body
+                    div.py-lg-3.px-lg-3
+                      p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                      | sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et rebum.

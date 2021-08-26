@@ -1,0 +1,52 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Process
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+
+            .container  
+              .row.gx-0.bg-black-pearl.align-items-center
+                .col-lg-6.mb-lg-0.mb-md-5.mb-5
+                  img(src="assets/images/portfolio/p1.jpg" alt="process").object-fit-cover.height-px-420
+                .col-lg-6
+                  div.px-5.py-4
+                    h5.text-school-yellow.mb-3 01
+                    h3.mb-3.text-white Tell about your porject
+                    p.text-white Donec sodales lacinia augue in semper. Proin vitae aliquet lectus. Ut sodales a mi faucibus  metus risus, mollis sollicitudin vulputate volutpat ac ullamcorper metus pellentesque. 
+            
+            .container.mt-5
+              .row.gx-0.bg-black-pearl.align-items-center
+                .col-lg-6
+                  div.px-5.py-4
+                    h5.text-school-yellow.mb-3 02
+                    h3.mb-3.text-white Validate the project
+                    p.text-white Donec sodales lacinia augue in semper. Proin vitae aliquet lectus. Ut sodales a mi faucibus  metus risus, mollis sollicitudin vulputate volutpat ac ullamcorper metus pellentesque. 
+                .col-lg-6.mb-lg-0.mb-md-5.mb-5
+                  img(src="assets/images/portfolio/p2.jpg" alt="process").object-fit-cover.height-px-420
+            
+            .container.mt-5
+              .row.gx-0.bg-black-pearl.align-items-center
+                .col-lg-6.mb-lg-0.mb-md-5.mb-5
+                  img(src="assets/images/home/h2.jpg" alt="process").object-fit-cover.height-px-420
+                .col-lg-6
+                  div.px-5.py-4
+                    h5.text-school-yellow.mb-3 03
+                    h3.mb-3.text-white Start Building
+                    p.text-white Donec sodales lacinia augue in semper. Proin vitae aliquet lectus. Ut sodales a mi faucibus  metus risus, mollis sollicitudin vulputate volutpat ac ullamcorper metus pellentesque. 
+            

@@ -1,0 +1,132 @@
+extends includes/layout
+include includes/mixin
+
+block content
+
+  article.entry
+
+    .entry-content
+      .bg-white-smoke
+        .py-4
+          .container.mt-2
+            .row
+              h6.text-dim-gray Home/
+                a(href="shop.html")
+                  span.h6.text-dim-gray CNC machine/
+                span.font-weight-normal Metalworking CNC Miling
+      
+      .container.mt-lg-8.mt-md-7.mt-6
+        .row.gx-lg-5
+          .col-lg-6
+            img(src="assets/images/shop/product.jpg", alt="shop")
+            .row.mt-4
+              .col-3
+                img(src="assets/images/shop/s1.jpg", alt="shop")
+              .col-3
+                img(src="assets/images/shop/s2.jpg", alt="shop")
+              .col-3
+                img(src="assets/images/shop/s3.jpg", alt="shop")
+              .col-3
+                img(src="assets/images/shop/s4.jpg", alt="shop")
+          
+          .col-lg-6.mt-lg-4.mt-md-5.mt-5
+            h1.mb-4 Metalworking CNC Milling
+            h4.mb-4.text-dim-gray $600
+            .row.mb-4
+              .col-3
+                i.fas.fa-star.text-black-pearl
+                i.fas.fa-star.text-black-pearl
+                i.fas.fa-star.text-black-pearl
+                i.fas.fa-star.text-black-pearl
+                i.fas.fa-star.text-black-pearl
+              .col-6
+                p (20 customer reviews)  
+            
+            .pr-lg-6
+              p Quisque eu quam venenatis, luctus eros ut, efficitur lectus. Maecenas sollicitudin tempor ante, id euismod mi ornare eget. Nunc nec hendrerit eros. Nulla facilisi. Fusce eget posuere dolor. Vestibulum et luctus lacus. Suspendisse nec erat eu ex lacinia luctus.
+            
+            .pb-5.pt-4
+              form(action="/action_page.php")
+                .row.gx-2
+                  .col-1
+                    input#quantity.form-control.number-border.px-0(type="number" name="quantity" min="1" max="500" placeholder="1")
+                  .col-6
+                    a.btn.btn-black-pearl(href='#') Add To Cart
+
+            p.mb-0 SKU: 00489
+            p.mb-0 Category: Machine
+            p.mb-0 Tag: In Stock
+      
+      .bg-white-smoke.mt-lg-9.mt-md-7.mt-6
+        .py-lg-8.py-md-7.py-6
+          .container
+            .row
+              .col-lg-8.offset-lg-2
+                nav
+                  #nav-tab.nav.nav-tabs(role="tablist")
+                    a#nav-Description-tab.nav-link.active.h4.mr-lg-6(data-toggle="tab" href="#nav-Description" role="tab" aria-controls="nav-Description" aria-selected="true") Description
+                    a#nav-Additional-information-tab.nav-link.h4.mr-lg-6(data-toggle="tab" href="#nav-Additional-information" role="tab" aria-controls="nav-Additional-information" aria-selected="false") Additional information
+                    a#nav-Reviews-tab.nav-link.h4.mr-lg-6(data-toggle="tab" href="#nav-Reviews" role="tab" aria-controls="nav-Reviews" aria-selected="false") Reviews (1)
+                  #nav-tabContent.tab-content
+                    #nav-Description.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-Description-tab")
+                      div.pr-lg-6.pt-lg-5.pt-md-4.pt-4
+                        h5.mb-4 Description 
+                        p Aliquam a feugiat sem. Duis sit amet mollis nibh, vitae venenatis lectus. Praesent porta diam quis lacus commodo ornare. Nulla facilisi. Nam risus lacus, vulputate a nunc nec, bibendum aliquam dolor. Vestibulum finibus consequat orci at tincidunt. Pellentesque eu eros in sem ultricies interdum. In facilisis quam id tellus pretium fermentum.
+
+                    #nav-Additional-information.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Additional-information-tab")
+                      div.pr-lg-6.pt-lg-5.pt-md-4.pt-4
+                        h5.mb-4 Additional Information
+                        table.table.table-bordered
+                          tbody
+                            tr
+                              td.col-lg-2.text-center.h6 Size
+                              td.col-lg-10 Small , Medium , Large
+
+                    #nav-Reviews.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Reviews-tab")
+                      div.pr-lg-6.pt-lg-5.pt-md-4.pt-4
+                        h5.mb-4 1 Review From Metalworking CNC Matchine
+                        
+                        p.mb-0 Add a Review
+                        p.mb-0 Your Rating
+                        i.fas.fa-star.text-black-pearl
+                        i.fas.fa-star.text-black-pearl
+                        i.fas.fa-star.text-black-pearl
+                        i.fas.fa-star.text-black-pearl
+                        i.fas.fa-star.text-black-pearl
+
+                        form#contact-form1(method='post' action='assets/php/contact.php')
+                          .mb-4.pb-2
+                            textarea#form_message.form-control.input-border(name='message', placeholder='Your Review', rows='5', required)
+                          .mb-4 
+                            a.btn.btn-black-pearl(href='#') Submit
+
+      .container.mt-lg-8.mt-md-7.mt-6.mb-lg-7.mb-md-7.mb-6
+        h1.text-center Related Products
+      .container.mb-lg-9.mb-md-7.mb-6
+        .row.gx-lg-5
+          .col-lg-4
+            a(href="single-product.html")
+              img(src="assets/images/shop/s1.jpg" alt="Shop-Image")
+            a(href="single-product.html")
+              h5.mt-3.mb-2 Metalworking CNC Milling
+            h5.my-2.text-dim-gray $635.00
+            div.pt-4
+              a.btn.btn-black-pearl.padding(href="single-product.html") Add to cart
+          
+          .col-lg-4.mt-lg-0.mt-md-5.mt-5
+            a(href="single-product.html")
+              img(src="assets/images/shop/s2.jpg" alt="Shop-Image")
+            a(href="single-product.html")
+              h5.mt-3.mb-2 Metalworking CNC
+            h5.my-2.text-dim-gray $973.00
+            div.pt-4
+              a.btn.btn-black-pearl.padding(href="single-product.html") Add to cart
+          
+          .col-lg-4.mt-lg-0.mt-md-5.mt-5
+            a(href="single-product.html")
+              img(src="assets/images/shop/s3.jpg" alt="Shop-Image")
+            a(href="single-product.html")
+              h5.mt-3.mb-2 Robotic Arm
+            h5.my-2.text-dim-gray $874.00
+            div.pt-4
+              a.btn.btn-black-pearl.padding(href="single-product.html") Add to cart

@@ -1,0 +1,112 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Pricing Table
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-md-6
+                .pricing-table-item.bg-white-smoke.px-5.py-5
+                  h4.pricing-table__title Basic Plan
+                  .pricing-table__price
+                    span.pricing-table__currency $
+                    h5.pricing-table__amount 560
+
+                  ul.pricing-table__features
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Ut wisi enim ad minim
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Tincidunt ut laoreet
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Sed diam nonummy nibh
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Consectetuer adipiscing
+
+                  .wp-block-button
+                    a.mt-5.read-more-style(href="#") Book now
+
+              .col-md-6
+                .pricing-table-item.bg-school-yellow.px-5.py-5
+                  h4.pricing-table__title Power Plan
+                  .pricing-table__price
+                    span.pricing-table__currency $
+                    h5.pricing-table__amount 790
+                  ul.pricing-table__features
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Ut wisi enim ad minim
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Tincidunt ut laoreet
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Sed diam nonummy nibh
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Consectetuer adipiscing
+                  .wp-block-button
+                    a.mt-5.read-more-style(href="#") Book now
+
+              .col-md-6
+                .pricing-table-item.bg-white-smoke.px-5.py-5
+                  h4.pricing-table__title Enterprise Plan
+                  .pricing-table__price
+                    span.pricing-table__currency $
+                    h5.pricing-table__amount 930
+                  ul.pricing-table__features
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Ut wisi enim ad minim
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Tincidunt ut laoreet
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Sed diam nonummy nibh
+                    li
+                      i.fas.fa-check.mr-2.mr-2
+                      |  Consectetuer adipiscing
+                  .wp-block-button
+                    a.mt-5.read-more-style(href="#") Book now
+
+              .col-md-6
+                .pricing-table-item.bg-school-yellow.px-5.py-5
+                  .text-black-pearl
+                    h4.pricing-table__title.text-black-pearl Premier Plan
+                    .pricing-table__price
+                      span.pricing-table__currency $
+                      h5.pricing-table__amount 1590
+                    ul.pricing-table__features
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Ut wisi enim ad minim
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Tincidunt ut laoreet
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Sed diam nonummy nibh
+                      li
+                        i.fas.fa-check.mr-2.mr-2
+                        |  Consectetuer adipiscing
+                    .wp-block-button
+                      a.mt-5.read-more-style(href="#") Book now

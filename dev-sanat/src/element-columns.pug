@@ -1,0 +1,82 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Columns
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.mb-5
+              .col-sm-12
+                .bg-black-pearl.px-5.py-5
+                  h3.mb-4.text-white One Column
+                  p.text-silver.lead-1
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    | ut labore et dolore magna aliqua.
+                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    | commodo
+                    | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat
+                    
+            .row.mb-5.gx-5
+              .col-sm-6
+                .bg-black-pearl.px-5.py-5
+                  h3.mb-4.text-white Two Columns
+                  p.text-silver
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    | ut labore et dolore magna aliqua.
+                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    | commodo
+                    | consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    | nulla pariatur.
+              .col-sm-6
+                .bg-school-yellow.px-5.py-5
+                  .text-black-pearl
+                    h3.text-black-pearl.mb-4 Two Columns
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      | ut labore et dolore magna aliqua.
+                      | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      | commodo
+                      | consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      | nulla pariatur.
+            // end of row
+            .row.mb-5.gx-5
+              .col-sm-4
+                .bg-school-yellow.px-3.py-3.text-center
+                  h5.mb-0.black-pearl Three Columns 
+              .col-sm-4
+                .bg-school-yellow.px-3.py-3.text-center
+                  h5.mb-0.black-pearl Three Columns
+
+              .col-sm-4
+                .bg-school-yellow.px-3.py-3.text-center
+                  h5.mb-0.black-pearl Three Columns
+
+            // end of row
+            .row.mb-5.gx-5
+              .col-md-3
+                .bg-black-pearl.px-3.py-3.text-center
+                  h5.text-white Four Columns
+              .col-md-3
+                .bg-black-pearl.px-3.py-3.text-center
+                  h5.text-white Four Columns
+              .col-md-3
+                .bg-black-pearl.px-3.py-3.text-center
+                  h5.text-white Four Columns
+              .col-md-3
+                .bg-black-pearl.px-3.py-3.text-center
+                  h5.text-white Four Columns

@@ -1,0 +1,60 @@
+extends includes/layout
+include includes/mixin
+block content
+  article.entry
+    .entry-content
+      // contact form
+      .container-fluid.px-0.home-bgi3
+        .pt-lg-9
+          .container
+            .row.gx-lg-5
+              .col-lg-6.d-lg-none
+                img(src="assets/images/contact/contact.jpg" alt="contact image")
+              .col-lg-6.mt-lg-0.mt-md-5.mt-5
+                h1.mb-4 We're here to help
+                p.lead-1.text-dim-gray Fill out the form or call 650.800.3124.
+                // form
+                .pr-lg-5.pt-lg-5.pb-lg-7.pt-md-5.pb-md-0.pt-5.pb-5
+                  form#contact-us-form(method='post' action='assets/php/contact.php')
+                    .mb-4.pb-2
+                      input#form_firstname.form-control.input-border.border-bottom.border-1.border-black-pearl(type='text', name='fname', placeholder='Name', required)
+                    .mb-4.pb-2
+                      input#form_email.form-control.input-border.border-bottom.border-1.border-black-pearl(type='text', name='lname', placeholder='Email', required)
+                    .mb-4.pb-2
+                      input#subject.form-control.input-border.border-bottom.border-1.border-black-pearl(type='text', name='subject', placeholder='Subject')
+                    .mb-4.pb-2
+                      textarea#form_message.form-control.input-border.border-bottom.border-1.border-black-pearl( name='message', placeholder='Message', rows='5', required)
+                    .mb-4 
+                      a.btn.btn-black-pearl(href='#') Submit
+
+      // map locations
+      .container.my-lg-9.my-md-7.my-5
+        .row.gx-lg-5
+          .col-lg-4
+            .map-responsive
+              iframe#gmap_canvas1(width='100' height='500' src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed')
+            .bg-white-smoke.px-4.py-4
+              .mx-3.my-3
+                h4.mb-3 Amsterdam
+                .pr-lg-6
+                  p.lead-1.text-dim-gray 3rd Floor 66 Queen Street BROOK VALE NSW 2100
+                  p.lead-1.text-dim-gray amsterdam@gmail.com +51853 458 243
+          .col-lg-4.mt-lg-0.mt-md-5.mt-5
+            .map-responsive
+              iframe#gmap_canvas2(width='100' height='500' src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed')
+            .bg-white-smoke.px-4.py-4
+              .mx-3.my-3
+                h4.mb-3 Chicago
+                .pr-lg-6
+                  p.lead-1.text-dim-gray 3rd Floor 66 Queen Street BROOK VALE NSW 2100
+                  p.lead-1.text-dim-gray chicago123@gmail.com​ +51853 458 243
+          .col-lg-4.mt-lg-0.mt-md-5.mt-5
+            .map-responsive
+              iframe#gmap_canvas3(width='100' height='500' src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed')
+            .bg-white-smoke.px-4.py-4
+              .mx-3.my-3
+                h4.mb-3 Singapore
+                .pr-lg-6
+                  p.lead-1.text-dim-gray 3rd Floor 66 Queen Street BROOK VALE NSW 2100
+                  p.lead-1.text-dim-gray singapore@gmail.com​ +51853 458 243
+                  

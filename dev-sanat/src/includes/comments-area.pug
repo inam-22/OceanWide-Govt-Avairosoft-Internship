@@ -1,0 +1,40 @@
+// Comments Area
+.comments.comments-area.container-small.mt-4(id="comments")
+      
+  #respond.comment-respond
+    h3#reply-title.comment-reply-title.mt-3 Leave a Reply
+    p Your email address will not be published. Required fields are marked *
+    form#commentform.comment-form(action='#', method='post', novalidate='')
+      
+      p.comment-notes
+        span#email-notes Your email address will not be published.
+        |  Required fields are marked 
+        span.required *
+      
+      p.comment-form-comment.form-group
+        label(for='comment') Comment
+        textarea#comment.form-control.input-border.border-bottom.border-1.border-black-pearl(name='comment', cols='45', rows='7', required='required' )
+      
+      p.comment-form-author.form-group
+        label(for='author')
+          | Name 
+          span.required *
+        input#author.form-control.input-border.border-bottom.border-1.border-black-pearl(name='author', type='text', value='', size='30', maxlength='245', required='required')
+      
+      p.comment-form-email.form-group
+        label(for='email')
+          | Email 
+          span.required *
+        input#email.form-control.input-border.border-bottom.border-1.border-black-pearl(name='email', type='email', value='', size='30', maxlength='100',  aria-describedby='email-notes', required='required')
+      
+      p.comment-form-url.form-group
+        label(for='url') Website
+        input#url.form-control.input-border.border-bottom.border-1.border-black-pearl(type='url', name='url', size='30', maxlength='200', value='')
+      
+      input#checkbox(type="checkbox" name="checkbox" value="Email")
+      label(for="checkbox")  Save my name, email, and website in this browser for the next time I comment.
+      
+      p.form-submit
+        a.btn.btn-black-pearl(href='#') Submit
+  // #respond
+// End Comments Area

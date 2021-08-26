@@ -1,0 +1,73 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Lists
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-md-6.mb-4
+                ul.smiple-list
+                  li Lorem ipsum dolor sit amet
+                  li
+                    | Quis nostrud exerci tation
+                  li
+                    | Ut wisi enim ad minim veniam
+                  li
+                    | Aliquam erat volutpat
+                  li
+                    | Tincidunt ut laoreet dolore
+                  li
+                    | Sed diam nonummy nibh
+                  li
+                    | Consectetuer adipiscing elit
+              .col-md-6.mb-4
+                ul.list-unstyled
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Lorem ipsum dolor sit amet
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Quis nostrud exerci tation
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Ut wisi enim ad minim veniam
+                  li
+                    i.far.fa-arrow-alt-circle-right.mr-2
+                    |  Aliquam erat volutpat
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Tincidunt ut laoreet dolore
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Sed diam nonummy nibh
+                  li
+                    i.fas.fa-check.mr-2.mr-2
+                    |  Consectetuer adipiscing elit 
+
+            .row.pl-3
+              .col-lg-6  
+                ul.list-unstyled.list-inlinetrue
+                  li.list-inline-item.mb-4
+                    span.i.fas.fa-check.pr-3
+                    | Phasellus ullamcorper lectus efficitur lacus elementum, nec vulputate arcu faucibus tristique urna ut
+                  li.list-inline-item.mb-4
+                    span.i.fas.fa-check.pr-3
+                    | Phasellus ullamcorper lectus efficitur lacus elementum, nec vulputate arcu faucibus tristique urna ut
+                  li.list-inline-item
+                    span.i.fas.fa-check.pr-3
+                    | Phasellus ullamcorper lectus efficitur lacus elementum, nec vulputate arcu faucibus tristique urna ut

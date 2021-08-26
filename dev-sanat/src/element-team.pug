@@ -1,0 +1,97 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Team Members
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      // team
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .container
+              .row.gx-5
+                .col-lg-6
+                  img(src="assets/images/team/teams2.jpg" alt="team image")
+                  .bg-white-smoke
+                    .px-4.py-4
+                      div.px-2.py-3
+                        h5 Jonathan 
+                        p.text-dim-gray Firm Director
+                        div.pt-1
+                          ul.list-unstyled.list-inlinetrue.mb-0
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-facebook
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-twitter
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-youtube
+                .col-lg-6
+                  img(src="assets/images/team/teams4.jpg" alt="team image")
+                  .bg-white-smoke
+                    .px-4.py-4
+                      div.px-2.py-3
+                        h5 Patricia Bogle
+                        p.text-dim-gray Chief Operating Officer
+                        div.pt-1
+                          ul.list-unstyled.list-inlinetrue.mb-0
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-facebook
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-twitter
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-youtube
+              .row.gx-5
+                .col-lg-6.mt-lg-5
+                  img(src="assets/images/team/teams3.jpg" alt="team image")
+                  .bg-white-smoke
+                    .px-4.py-4
+                      div.px-2.py-3
+                        h5 Gerry Heller
+                        p.text-dim-gray Managing Director
+                        div.pt-1
+                          ul.list-unstyled.list-inlinetrue.mb-0
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-facebook
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-twitter
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-youtube
+                .col-lg-6.mt-lg-5.mt-md-6.mt-5
+                  img(src="assets/images/team/teams5.jpg" alt="team image")
+                  .bg-white-smoke
+                    .px-4.py-4
+                      div.px-2.py-3
+                        h5 Joseph Hyde
+                        p.text-dim-gray Tax Partner
+                        div.pt-1
+                          ul.list-unstyled.list-inlinetrue.mb-0
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-facebook
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-twitter
+                            li.list-inline-item
+                              a(href='#')
+                                i.icon-style.fab.fa-youtube

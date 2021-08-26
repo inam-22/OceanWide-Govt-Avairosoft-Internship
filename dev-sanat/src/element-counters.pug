@@ -1,0 +1,38 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Counters
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='1969', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Happy Partner
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='2308', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Projects Finished
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='3548', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Coups of Coffee
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.
+              .col-sm-6.mb-4
+                h1.mb-3.display-4.timer(data-from='0', data-to='9048', data-speed='5000', data-refresh-interval='50')
+                h5.mb-3 Working Hours
+                p Oratio pertinax cu vix, id aliquam habemus tractatos. Eu vis modo officiis liberavisse, an persequeris complectitur mei et.

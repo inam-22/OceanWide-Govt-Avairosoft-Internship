@@ -1,0 +1,61 @@
+// Navbar
+.site-header
+  nav.navbar.navbar-expand-lg.navbar-light
+    .container-fluid.px-lg-6.px-md-4.px-3
+      a.navbar-brand(href='index.html')
+        <img src="assets/images/logo.svg" class="attachment-full size-full" alt="" loading="lazy">
+
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul.navbar-nav.mx-auto
+          //- Homes
+          li.nav-item.active
+            a.nav-link(href='index.html') Home
+
+          //- Pages
+          li.nav-item.dropdown
+            a.dropdown-toggle.nav-link(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Pages
+            .dropdown-menu
+              a.dropdown-item(href='page-about-us.html') About Us
+              a.dropdown-item(href='page-contact.html') Contact Us
+              a.dropdown-item(href='page-faq.html') Faq's
+              a.dropdown-item(href='page-agents.html') Agents
+              a.dropdown-item(href='page-testimonials.html') Testimonials
+              a.dropdown-item(href='page-service-box.html') Service Box
+              a.dropdown-item(href='page-partners.html') Partners
+              a.dropdown-item(href='page-services.html') Services
+              a.dropdown-item(href='page-single-service.html') Single Service
+              a.dropdown-item(href='page-404.html') 404
+          
+          //- portfolio
+          li.nav-item.dropdown.mega_menu_holder
+            a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown') Portfolio
+            .dropdown-menu
+              a.dropdown-item(href='page-portfolio-list.html') Portfolio List
+              a.dropdown-item(href='single-project.html') Single Project
+
+          //- Blog
+          li.nav-item.dropdown.mega_menu_holder
+            a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown') Blog
+            .dropdown-menu
+              a.dropdown-item(href='blog.html') Blog
+              a.dropdown-item(href='blog-single-post.html') Single Post
+
+          //- Portfolio
+          li.nav-item.dropdown.mega_menu_holder
+            a.dropdown-toggle.nav-link(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Shop
+            .dropdown-menu
+              a.dropdown-item(href='shop.html') Shop
+              a.dropdown-item(href='single-product.html') Single Product
+          
+          //- element
+          li.nav-item
+            a.nav-link(href='element-accordions.html') Elements
+
+        ul.nav-modules
+          // Social nav
+          li.d-flex.align-items-center
+            a.btn.btn-black-pearl(href='page-contact.html') +19 855 518 386
+
+// End Navbar

@@ -1,0 +1,55 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Testimonials
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row.gx-0.bg-white-smoke
+              .col-lg-5.order-lg-1
+                img(src="assets/images/testimonials/t1.jpg" alt="testimonials1")
+              .col-lg-7
+                .px-5.py-5.px-lg-5.py-lg-8
+                  .my-2
+                    .row.gx-lg-0
+                      .col-lg-2.mb-4.mb-lg-0
+                        i.fas.fa-quote-left.text-dark-gray.custom-icon
+                      .col-lg-10
+                        .ml-n1
+                          h4.custom-line-height Tempus lphasellus ornare at metus nec tristique. Integer non facilisis lacus, at tristique purus. Cras erosed nisl, imperdiet in nisl rhoncus.
+                          p.text-dim-gray.font-italic.mt-2.mb-n1 Michael D. Wilson - CEO of Tozee
+
+            .row
+              .col-lg-10
+                .bg-white-smoke.mt-5
+                  .px-4.py-4
+                    div.px-2.py-3
+                      .row.gx-lg-5
+                        .col-9
+                          p.text-dim-gray Cras erosed nisl, imperdiet in nisl rhoncus, lobortis igula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim laoreet.
+                          h6.mb-1 Michael Wilson - CEO of Tozee
+                        .col-3
+                          img.rounded-circle(src="assets/images/Testimonials/t4.jpg" alt="home13")
+                .bg-white-smoke.mt-5
+                  .px-4.py-4
+                    div.px-2.py-3
+                      .row.gx-lg-5
+                        .col-9
+                          p.text-dim-gray Cras erosed nisl, imperdiet in nisl rhoncus, lobortis igula. Duis elementum laoreet congue. In scelerisque metused interdum eros dignissim laoreet.
+                          h6.mb-1 Patricia Bogle - Manager of Moiz
+                        .col-3
+                          img.rounded-circle(src="assets/images/home/h13.jpg" alt="home14")

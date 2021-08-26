@@ -1,0 +1,49 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Tabs
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .row
+              .col-lg-8
+                nav.pr-lg-5
+                  #nav-tab.nav.nav-tabs(role="tablist")
+                    a#nav-Stratigy-tab.h6.nav-link.active.mr-6(data-toggle="tab" href="#nav-Stratigy" role="tab" aria-controls="nav-Stratigy" aria-selected="true") Stratigy
+                    a#nav-Organization-tab.h6.nav-link.mr-6(data-toggle="tab" href="#nav-Organization" role="tab" aria-controls="nav-Organization" aria-selected="false") Organization
+                    a#nav-Development-tab.h6.nav-link.mr-6(data-toggle="tab" href="#nav-Development" role="tab" aria-controls="nav-Development" aria-selected="false") Development
+                    a#nav-Delivery-tab.h6.nav-link(data-toggle="tab" href="#nav-Delivery" role="tab" aria-controls="nav-Delivery" aria-selected="false") Delivery
+                  #nav-tabContent.tab-content.mt-3
+                    #nav-Stratigy.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-Stratigy-tab")
+                      .pt-lg-4.pt-3
+                        p.lead.text-black-pearl.font-medium Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+
+                    #nav-Organization.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Organization-tab")
+                      .pt-lg-4.pt-3
+                        p.lead.text-black-pearl.font-medium It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsumg 
+                        p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+
+                    #nav-Development.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Development-tab")
+                      .pt-lg-4.pt-3
+                        p.lead.text-black-pearl.font-medium There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
+                        p Siam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum.
+
+                    #nav-Delivery.tab-pane.fade(role="tabpanel" aria-labelledby="nav-Delivery-tab")
+                      .pt-lg-4.pt-3
+                        p.lead.text-black-pearl.font-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                        p discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,

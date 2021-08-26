@@ -1,0 +1,49 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Certified Partner
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .col-6.mb-5
+              h2.mb-3 Our Partners
+              p
+                | Quisque congue accumsan ante id condimentum. Aliquam lorem nisl, bibendum et sollicitudin
+                | ut, viverra vitae ligula. In hac habitasse platea dictumst.
+
+            .row.gx-5.gy-5.mb-5
+              //row one
+              .col-lg-6
+                .bg-white-smoke 
+                  .py-lg-6.py-md-6.py-5.px-4
+                    div.mx-1.my-lg-n1
+                      .text-center
+                        div.pb-4
+                          img.mb-3(src="assets/images/partner/p4.png" alt="partner 4")
+                        h3.mb-4 Bank Partner
+                        div.pt-1.pb-2
+                          p.mb-lg-3.mb-md-0.mb-0 Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.
+              .col-lg-6
+                .bg-white-smoke 
+                  .py-lg-6.py-md-6.py-5.px-4
+                    div.mx-1.my-lg-n1
+                      .text-center
+                        div.pb-4
+                          img.mb-3(src="assets/images/partner/p5.png" alt="partner 5")
+                        h3.mb-4 Investment Partner
+                        div.pt-1.pb-2
+                          p.mb-lg-3.mb-md-0.mb-0 Aptent taciti sociosqu ad litora torquent per con ubia nos inceptos himenaeos. Pellentesque eget scelerisque turpis et consequat enim uisque at.

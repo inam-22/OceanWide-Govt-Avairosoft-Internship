@@ -1,0 +1,78 @@
+extends includes/layout
+include includes/mixin
+
+block content
+  article.entry
+    .entry-content
+      //- Page title
+      .bg-black-pearl
+        .py-lg-8.py-md-8.py-7.mb-lg-7.mb-md-5.mb-5
+          .container
+            .row
+              .col-lg-6
+                div.mt-lg-n2
+                  h1.mb-4.text-white Icon Content Box
+                  p.lead-1.text-silver.mt-n1.mb-0 Aecenas metus lacus, viverra vitae urna a, facilisis faucibus leo. Sed sagittis ipsum id lacus pharetra accumsan placerat. Nunc facilisis fringilla maximus sagittis.
+      .container
+        .row.large-gutters
+          .col-lg-3.mb-7
+            //- Elements nav
+            include includes/elements-nav
+          .col-lg-9.mb-7
+            .container.mt-2
+              .row.gx-5
+                .col-lg-6
+                  .bg-white-smoke.px-4.py-5
+                    .mx-3
+                      i.mb-4.h1.display-4.fas.fa-charging-station.text-aluminium
+                      .pt-3
+                        h4.mb-3 Energy
+                      .pt-2.pb-3
+                        p Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra. Proin in purus nisi. Maecenas euismod auctor mi id ultrices. Praesent pharetra, sem ac dui pellentesque vestibulum congue,
+                      a.mt-5.read-more-style(href="#") Read more
+                .col-lg-6.mt-lg-0.mt-md-5.mt-4
+                  .bg-white-smoke.px-4.py-5
+                    .mx-3
+                      i.mb-4.h1.display-4.fas.fa-cog.text-aluminium
+                      .pt-3
+                        h4.mb-3 Operation Mnagement
+                      .pt-2.pb-3
+                        p Suspendisse in massa id velit ullamcorper laoreet ac bibendum velit. Pellentesque nec erat in mi molestie pharetra. Proin in purus nisi. Maecenas euismod auctor mi id ultrices. Praesent pharetra, sem ac dui pellentesque vestibulum congue,
+                      a.mt-5.read-more-style(href="#") Read more
+                
+            hr.mt-5.mb-5
+            
+            .container
+              .row.text-center.gx-5
+                .col-md-6.mb-4
+                  .bg-white-smoke.px-5.py-5
+                    i.far.fa-heart.fa-2x.mb-3
+                    h4.mb-3 Made With Love
+                    p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+                .col-md-6.mb-4
+                  .bg-black-pearl.px-5.py-5
+                    .text-white
+                      i.fab.fa-angellist.fa-2x.mb-3
+                      h4.text-white.mb-3 Easy to Customize
+                      p Today, I'm very happy about myself, because I realized my dreams. I learned how to understand what people want.
+
+              hr.mt-4.mb-5
+
+              .row.gx-5
+                .col-lg-6.align-items-center.mb-lg-.mb-md-5.mb-4
+                  .bg-black-pearl
+                    .py-lg-6.px-md-5.px-5.py-6
+                      .text-white
+                        div
+                          span.icon
+                            i.h-large.display-5.fas.fa-money-check-alt.mb-lg-4.mb-4
+                          h4.text-white.text-capitalize.mb-4.pr-2 pre-construction estimating
+                          p.pr-3 Quisque sollicitudin lacinia sapien, eu tincidunt nunc ata accumsan laoreet. curabitur feugiat posuere odio nec tincidunt. aliquyam erat nunc sede diam is voluptua 
+                .col-lg-6.mb-lg-0.mb-md-5.mb-4
+                  .bg-white-smoke
+                    .py-lg-6.px-md-5.px-5.py-6
+                      div
+                        span.icon
+                          i.pr-5.h-large.display-5.fas.fa-puzzle-piece.mb-lg-4.mb-4
+                        h4.text-capitalize.mb-4.pr-5 Cost estimation
+                        p.pr-3 Quisque sollicitudin lacinia sapien, eu tincidunt nunc ata accumsan laoreet. curabitur feugiat posuere odio nec tincidunt. aliquyam erat nunc sede diam is voluptua 
